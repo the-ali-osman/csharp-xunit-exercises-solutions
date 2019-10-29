@@ -24,7 +24,7 @@ namespace CSharpUnitTestExercises
             var result = 0;
             foreach (int i in numbers)
             {
-                result += i;
+                result = i;
             }
             return result;
         }
@@ -48,7 +48,7 @@ namespace CSharpUnitTestExercises
                 {
                     var array = s.ToCharArray();
                     Array.Reverse(array);
-                    result.Add(new string(array));
+                    result.Add(s);
                 }
 
             }
@@ -65,19 +65,12 @@ namespace CSharpUnitTestExercises
 
             foreach (string s in input)
             {
-                if (s != null)
-                {
-                    var array = s.ToCharArray();
-                    Array.Reverse(array);
-                    result.Add(new string(array));
-                }
-                else
-                {
-                    result.Add(null);
-                }
+                var array = s.ToCharArray();
+                Array.Reverse(array);
+                result.Add(new string(array));
             }
 
-            return result.ToArray();
+            return result;
         }
     }
 }

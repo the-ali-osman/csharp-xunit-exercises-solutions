@@ -18,7 +18,7 @@ namespace CSharpUnitTestExercises
         */
         public string Hello(string name)
         {
-            return name.Length > 0 ? "Hello " + name + "!" : "Who are you?";
+            throw new NotImplementedException();
         }
 
         /*
@@ -29,9 +29,7 @@ namespace CSharpUnitTestExercises
         */
         public string Reverse(string input)
         {
-            var inputArray = input.ToArray();
-            Array.Reverse(inputArray);
-            return new string(inputArray);
+            throw new NotImplementedException();
         }
 
         /*
@@ -39,11 +37,7 @@ namespace CSharpUnitTestExercises
         */
         public string LeadingChars(string input, int n)
         {
-            if (n > input.Length)
-            {
-                n = input.Length;
-            }
-            return input.Substring(0, n);
+            throw new NotImplementedException();
         }
 
         /*
@@ -53,7 +47,7 @@ namespace CSharpUnitTestExercises
 
         public string ReplaceVowels(string input)
         {
-            return Regex.Replace(input, "[aeiou|AEIOU]", "*");
+            throw new NotImplementedException();
         }
 
         /*
@@ -80,16 +74,7 @@ namespace CSharpUnitTestExercises
         */
         public dynamic WordStats(string input)
         {
-            string[] words = Regex.Split(input, " ");
-
-            Dictionary<string, int> results = new Dictionary<string, int>();
-            results.Add("charCount", input.Length);
-            results.Add("lineCount", input.Length == 0 ? 0 : Regex.Split(input, "\n").Count());
-            results.Add("singleLetterCount", words.Where(word => word.Length == 1).Count());
-            results.Add("hyphenatedCount", words.Where(word => word.Contains("-")).Count());
-            results.Add("allCapsCount", input.Length == 0 ? 0 : words.Where(word => word.ToUpper().Equals(word)).Count());
-
-            return results;
+            throw new NotImplementedException();
         }
     }
 }

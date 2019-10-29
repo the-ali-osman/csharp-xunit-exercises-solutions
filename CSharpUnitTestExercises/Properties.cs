@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace CSharpUnitTestExercises
@@ -11,7 +12,7 @@ namespace CSharpUnitTestExercises
          */
         public IEnumerable<string> firstNames(List<Person> people)
         {
-            return people.Select(person => person.firstName);
+            throw new NotImplementedException();
         }
 
         /*  Return a list containing the full names of the people in the given list
@@ -20,7 +21,7 @@ namespace CSharpUnitTestExercises
          */
         public IEnumerable<string> fullNames(List<Person> people)
         {
-            return people.Select(person => person.getFullName);
+            throw new NotImplementedException();
         }
 
         /*  Modify the "Person.firstName" and "Person.lastName"
@@ -29,8 +30,7 @@ namespace CSharpUnitTestExercises
          */
         public void upperCaseNames(Person person)
         {
-            person.firstName = person.firstName.ToUpper();
-            person.lastName = person.lastName.ToUpper();
+            throw new NotImplementedException();
         }
 
         /*  Create a list of "Person" objects with the given full names.
@@ -38,16 +38,7 @@ namespace CSharpUnitTestExercises
          */
         public List<Person> createPeople(string[] names)
         {
-            List<Person> results = new List<Person>();
-            foreach (string name in names)
-            {
-                string[] parts = name.Split(' ');
-                Person person = new Person();
-                person.firstName = parts[0];
-                person.lastName = parts[1];
-                results.Add(person);
-            }
-            return results;
+            throw new NotImplementedException();
         }
 
         /* 
@@ -58,7 +49,7 @@ namespace CSharpUnitTestExercises
          */
         public IEnumerable<int> heights(List<Person> people)
         {
-            return people.Select(person => person.height);
+            throw new NotImplementedException();
         }
     }
 

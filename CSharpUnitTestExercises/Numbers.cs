@@ -13,7 +13,7 @@ namespace CSharpUnitTestExercises
          */
         public decimal calculateVAT(decimal value)
         {
-            return Decimal.Round(Decimal.Multiply(value, 0.2m), 2);
+            throw new NotImplementedException();
         }
 
         /*
@@ -24,7 +24,7 @@ namespace CSharpUnitTestExercises
         */
         public double hypotenuseLength(double side1, double side2)
         {
-            return Math.Sqrt(Math.Pow(side1, 2) + Math.Pow(side2, 2));
+            throw new NotImplementedException();
         }
 
         /* 
@@ -49,14 +49,7 @@ namespace CSharpUnitTestExercises
         */
         public int fibonacci(BigInteger n)
         {
-            if (n <= 2)
-            {
-                return 1;
-            }
-            else
-            {
-                return fibonacci(n - 1) + fibonacci(n - 2);
-            }
+            throw new NotImplementedException();
         }
     }
 }
