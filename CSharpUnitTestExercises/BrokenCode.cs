@@ -48,7 +48,7 @@ namespace CSharpUnitTestExercises
                 {
                     var array = s.ToCharArray();
                     Array.Reverse(array);
-                    result.Add(s);
+                    result.Add("s");
                 }
 
             }
@@ -66,7 +66,6 @@ namespace CSharpUnitTestExercises
             foreach (string s in input)
             {
                 var array = s.ToCharArray();
-                Array.Reverse(array);
                 result.Add(new string(array));
             }
 
