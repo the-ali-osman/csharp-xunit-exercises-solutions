@@ -10,7 +10,7 @@ namespace CSharpUnitTestExercises
         /*  Return a list containing just the first names of the people in the given list
          *  The names should be in the same order as the original list
          */
-        public IEnumerable<string> firstNames(List<Person> people)
+        public IEnumerable<string> FirstNames(List<Person> people)
         {
             throw new NotImplementedException();
         }
@@ -19,7 +19,7 @@ namespace CSharpUnitTestExercises
          *  The names should be in the same order as the original list
          *  In this case, note the fullName property is read-only because only a getter method is defined
          */
-        public IEnumerable<string> fullNames(List<Person> people)
+        public IEnumerable<string> FullNames(List<Person> people)
         {
             throw new NotImplementedException();
         }
@@ -28,7 +28,7 @@ namespace CSharpUnitTestExercises
          *  values of the given "Person" by making all letters upper case
          *  Note: System.Strings has a built in method to convert a string to upper case
          */
-        public void upperCaseNames(Person person)
+        public void UpperCaseNames(Person person)
         {
             throw new NotImplementedException();
         }
@@ -36,7 +36,7 @@ namespace CSharpUnitTestExercises
         /*  Create a list of "Person" objects with the given full names.
          *  You will need to split each full name yourself, delimiting with a space.
          */
-        public List<Person> createPeople(string[] names)
+        public List<Person> CreatePeople(string[] names)
         {
             throw new NotImplementedException();
         }
@@ -47,7 +47,7 @@ namespace CSharpUnitTestExercises
          *  Note: In this case, "Person.height" is a field, not a property, due to the lack
          *  of getters and setters
          */
-        public IEnumerable<int> heights(List<Person> people)
+        public IEnumerable<int> Heights(List<Person> people)
         {
             throw new NotImplementedException();
         }
@@ -59,7 +59,7 @@ namespace CSharpUnitTestExercises
         public string firstName { get; set; }
         public string lastName { get; set; }
 
-        public string getFullName
+        public string GetFullName
         {
             get { return string.Format("{0} {1}", firstName, lastName); }
         }

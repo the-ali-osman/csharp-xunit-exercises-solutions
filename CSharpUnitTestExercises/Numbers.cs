@@ -11,7 +11,7 @@ namespace CSharpUnitTestExercises
          * The result should ideally rounded up to two decimal places, although
          * you can skip this if you want
          */
-        public decimal calculateVAT(decimal value)
+        public decimal CalculateVAT(decimal value)
         {
             throw new NotImplementedException();
         }
@@ -22,7 +22,7 @@ namespace CSharpUnitTestExercises
          * of the squares of the other two sides.
          * ie: a(squared) + b(squared) = h(squared)
         */
-        public double hypotenuseLength(double side1, double side2)
+        public double HypotenuseLength(double side1, double side2)
         {
             throw new NotImplementedException();
         }
@@ -47,7 +47,7 @@ namespace CSharpUnitTestExercises
          *  numbers, uncomment the fib(20,000) data set from the NumbersTest
          *  test case.
         */
-        public int fibonacci(BigInteger n)
+        public int Fibonacci(BigInteger n)
         {
             throw new NotImplementedException();
         }

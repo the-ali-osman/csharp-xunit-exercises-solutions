@@ -20,7 +20,7 @@ namespace Tests
                 new Person() { firstName = "Selina", lastName = "Kyle" }
             };
 
-            Assert.Equal(new[] { "Joe", "Jill", "Arthur", "Selina" }, exercise.firstNames(people));
+            Assert.Equal(new[] { "Joe", "Jill", "Arthur", "Selina" }, exercise.FirstNames(people));
         }
 
         [Fact(DisplayName = "Get the full names of people")]
@@ -33,14 +33,14 @@ namespace Tests
                 new Person() { firstName = "Selina", lastName = "Kyle" }
             };
 
-            Assert.Equal(new[] { "Joe Bloggs", "Jill Dash", "Arthur Dent", "Selina Kyle" }, exercise.fullNames(people));
+            Assert.Equal(new[] { "Joe Bloggs", "Jill Dash", "Arthur Dent", "Selina Kyle" }, exercise.FullNames(people));
         }
 
         [Fact(DisplayName = "Make all names upper case")]
         public void UpperCaseNames()
         {
             var person = new Person() { firstName = "Joe", lastName = "Bloggs" };
-            exercise.upperCaseNames(person);
+            exercise.UpperCaseNames(person);
             Assert.Equal("JOE", person.firstName);
             Assert.Equal("BLOGGS", person.lastName);
         }
@@ -50,7 +50,7 @@ namespace Tests
         {
             var names = new[] { "Joe Bloggs", "Jill Dash", "Arthur Dent", "Selina Kyle" };
 
-            var people = exercise.createPeople(names);
+            var people = exercise.CreatePeople(names);
 
             Assert.True(people.All(p => p is Person));
             Assert.Equal(names.Length, people.Count);
@@ -68,7 +68,7 @@ namespace Tests
                 new Person() { firstName = "Selina", lastName = "Kyle", height =  170}
             };
 
-            Assert.Equal(new[] { 185, 176, 163, 170 }, exercise.heights(people));
+            Assert.Equal(new[] { 185, 176, 163, 170 }, exercise.Heights(people));
         }
     }
 }
