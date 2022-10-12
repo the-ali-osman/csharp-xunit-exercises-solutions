@@ -24,7 +24,8 @@ namespace CSharpUnitTestExercises
             var result = 0;
             foreach (int i in numbers)
             {
-                result = i;
+                // added i to result, as the result needs to be cumulative
+                result = i+result;
             }
             return result;
         }
